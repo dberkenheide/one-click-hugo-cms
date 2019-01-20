@@ -1,12 +1,14 @@
 {{ define "main" }}
 
   <div class="mw6 center ph3 pv4">
-    <h1 class="f2 lh-title b mb3">{{.Title}}</h1>
-    <div class="flex justify-between grey-3">
-      <p>{{ .Date.Format "Mon, Jan 2, 2006" }}</p>
-      <p>Read in {{ .ReadingTime }} minutes</p>
-    </div>
-    <div class="cms mw6">
+    <h1 onclick="toggle('{{ .UniqueID }}')" class="f2 lh-title b mb3">{{.Title}}</h1>
+    <script>
+      function toggle(id) {
+        const toggleElement = document.getElementById(id);
+        toggleElement.style.display = toggleElement.style.display === "none" ? "block" : "none";
+      } 
+    </script>
+    <div class="cms mw6" id="{{ .UniqueID }}" style="display: none;">
       <p>{{ .Description }}</p>
       {{ if .Params.image }}<img src="{{ .Params.image }}" alt="{{ .Title }}" />{{ end }}
       {{ .Content }}
