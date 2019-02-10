@@ -1,5 +1,17 @@
 .i         { font-style: italic; }
 .fs-normal { font-style: normal; }
+.malort-font {
+  background:url('/img/malortwall.png');
+          background-repeat:repeat-x;
+          background-position:0 0;
+          color:transparent;
+          -webkit-font-smoothing:antialiased;
+          -webkit-background-clip:text;
+          -moz-background-clip:text;
+          background-clip:text;
+          -webkit-text-fill-color:transparent;
+          margin:0;
+}
 
 @media (--breakpoint-not-small) {
   .i-ns       { font-style: italic; }
