@@ -1,19 +1,19 @@
-<div class="bg-white pv1">
-	<h1 class="ph5 mw7 left f1 b malort-font">Malort Osnabrück</h1>
-	<div class="ph5 mw7 left">
-		<h1 onclick="toggle('A')" class="flex-ns mhn1-ns f3 flex-wrap mb3">Test Überschrift A</h1>
+<div class="bg-white">
+	<h1 class="ph3-ns ph3-m ph3-nl ph3 f-subheadline-ns f-subheadline-m f-subheadline-l f-subheadline b malort-font">Malort Osnabrück</h1>
+	<div class="ph3-ns ph3-m ph3-nl ph3   ">
+		<h1 onclick="toggle('A')" class="f-headline-ns f-headline-m f-headline-l f-headline b malort-font">Test Überschrift A</h1>
 		<div class="flex-ns mhn1-ns flex-wrap mb3" id="A" style="display: none;" >
 			{{ range where (where .Data.Pages "Type" "post") ".Params.category" "==" "A" }}
 					{{ .Render "single" }}
 			{{ end }}
 		</div>
 	</div>
-	<div class="ph5 mw7 left">
-			<h1 onclick="toggle('B')" class="flex-ns mhn1-ns f3 flex-wrap mb3">Test Überschrift B</h1>
-			<div class="flex-ns mhn1-ns flex-wrap mb3" id="B" style="display: none;" >
-				{{ range where (where .Data.Pages "Type" "post") ".Params.category" "==" "B" }}
-						{{ .Render "single" }}
-				{{ end }}
-			</div>
+	<div class="ph3-ns ph3-m ph3-nl ph3   ">
+		<h1 onclick="toggle('B')" class=" f-headline-ns f-headline-m f-headline-l f-headline b malort-font">Test Überschrift B</h1>
+		<div class="flex-ns mhn1-ns flex-wrap mb3" id="B" style="display: none;" >
+			{{ range where (where .Data.Pages "Type" "post") ".Params.category" "==" "B" }}
+					{{ .Render "single" }}
+			{{ end }}
 		</div>
+	</div>
 </div>
