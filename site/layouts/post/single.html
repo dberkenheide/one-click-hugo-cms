@@ -1,10 +1,13 @@
 {{ define "main" }}
 
   <div class="mw6 left ph3">
-    <h1 onclick="toggle('{{ .UniqueID }}')" class="mb3" >{{.Title}}</h1>
+    <h1 onclick="toggleArticle('{{ .UniqueID }}', '{{ .Title }}')" class="mb3" id="{{ .Title }}" >{{.Title}}</h1>
     <script>
-      function toggle(id) {
-        const toggleElement = document.getElementById(id);
+        "use strict";
+      function toggleArticle(idOfElementToBeToggled, h1) {
+        const toggleElement = document.getElementById(idOfElementToBeToggled);
+        const h1Element = document.getElementById(h1);
+        h1Element.style.fontWeight = h1Element.style.fontWeight ===  "bold" ? "initial" : "bold";
         toggleElement.style.display = toggleElement.style.display === "none" ? "block" : "none";} 
     </script>
     <div class="cms mw6" id="{{ .UniqueID }}" style="display: none;">

@@ -1,4 +1,10 @@
 <div class="bg-white">
+	    <script>
+				function toggle(idOfElementToBeToggled) {
+				  "use strict";
+				  const toggleElement = document.getElementById(idOfElementToBeToggled);
+				  toggleElement.style.display = toggleElement.style.display === "none" ? "block" : "none";} 
+			  </script>
 	<!-- Malort Osnabrück -->
 	<h1 class="ph3-ns ph3-m ph3-nl ph3 f-title-ns f-title-m f-title-l f-title b malort-font">Malort Osnabrück</h1>
 	<!-- Why -->
@@ -21,7 +27,7 @@
 	</div>
 	<!-- Participate -->
 	<div class="ph3-ns ph3-m ph3-nl ph3   ">
-		<h1 onclick="toggle('B')" class=" f-headline-ns f-headline-m f-headline-l f-headline b malort-font">teil sein</h1>
+		<h1 onclick="toggle('C')" class=" f-headline-ns f-headline-m f-headline-l f-headline b malort-font">teil sein</h1>
 		<div class="flex-ns mhn1-ns flex-wrap" id="C" style="display: none;" >
 			{{ range where (where .Data.Pages "Type" "post") ".Params.category" "==" "C" }}
 					{{ .Render "single" }}
@@ -30,7 +36,7 @@
 	</div>
 	<!-- Contact -->
 	<div class="ph3-ns ph3-m ph3-nl ph3   ">
-		<h1 onclick="toggle('B')" class=" f-headline-ns f-headline-m f-headline-l f-headline b malort-font">kontakt</h1>
+		<h1 onclick="toggle('D')" class=" f-headline-ns f-headline-m f-headline-l f-headline b malort-font">kontakt</h1>
 		<div class="flex-ns mhn1-ns flex-wrap" id="D" style="display: none;" >
 			{{ range where (where .Data.Pages "Type" "post") ".Params.category" "==" "D" }}
 					{{ .Render "single" }}
