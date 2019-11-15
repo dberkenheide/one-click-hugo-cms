@@ -7,38 +7,38 @@
 		</script>
 	<!-- Malort Osnabrück -->
 	<h1 class="ph3-ns ph3-m ph3-nl ph3 f-title-ns f-title-m f-title-l f-title b malort-font">Malort Osnabrück</h1>
-	<!-- Why -->
+	<!-- warum -->
 	<div class="ph3-ns ph3-m ph3-nl ph3   ">
-		<h1 onclick="toggle('A')" class="f-headline-ns f-headline-m f-headline-l f-headline b malort-font">warum</h1>
-		<div class="flex-ns mhn1-ns flex-wrap " id="A" style="display: none;" >
-			{{ range where (where .Data.Pages "Type" "post") ".Params.category" "==" "A" }}
+		<h1 onclick="toggle('warum')" class="f-headline-ns f-headline-m f-headline-l f-headline b malort-font">warum</h1>
+		<div class="flex-ns mhn1-ns flex-wrap " id="warum" style="display: none;" >
+			{{ range where (where .Data.Pages "Type" "post") ".Params.category" "==" "warum" }}
 					{{ .Render "single" }}
 			{{ end }}
 		</div>
 	</div>
-	<!-- Malort -->
+	<!-- malort -->
 	<div class="ph3-ns ph3-m ph3-nl ph3   ">
-		<h1 onclick="toggle('B')" class=" f-headline-ns f-headline-m f-headline-l f-headline b malort-font">der malort</h1>
-		<div class="flex-ns mhn1-ns flex-wrap" id="B" style="display: none;" >
-			{{ range where (where .Data.Pages "Type" "post") ".Params.category" "==" "B" }}
+		<h1 onclick="toggle('malort')" class=" f-headline-ns f-headline-m f-headline-l f-headline b malort-font">der malort</h1>
+		<div class="flex-ns mhn1-ns flex-wrap" id="malort" style="display: none;" >
+			{{ range where (where .Data.Pages "Type" "post") ".Params.category" "==" "malort" }}
 					{{ .Render "single" }}
 			{{ end }}
 		</div>
 	</div>
-	<!-- Participate -->
+	<!-- teil sein -->
 	<div class="ph3-ns ph3-m ph3-nl ph3   ">
-		<h1 onclick="toggle('C')" class=" f-headline-ns f-headline-m f-headline-l f-headline b malort-font">teil sein</h1>
-		<div class="flex-ns mhn1-ns flex-wrap" id="C" style="display: none;" >
-			{{ range where (where .Data.Pages "Type" "post") ".Params.category" "==" "C" }}
+		<h1 onclick="toggle('teil_sein')" class=" f-headline-ns f-headline-m f-headline-l f-headline b malort-font">teil sein</h1>
+		<div class="flex-ns mhn1-ns flex-wrap" id="teil_sein" style="display: none;" >
+			{{ range where (where .Data.Pages "Type" "post") ".Params.category" "==" "teil_sein" }}
 					{{ .Render "single" }}
 			{{ end }}
 		</div>
 	</div>
-	<!-- Contact -->
+	<!-- kontakt -->
 	<div class="ph3-ns ph3-m ph3-nl ph3   ">
-		<h1 onclick="toggle('D')" class=" f-headline-ns f-headline-m f-headline-l f-headline b malort-font">kontakt</h1>
-		<div class="flex-ns mhn1-ns flex-wrap" id="D" style="display: none;" >
-			{{ range where (where .Data.Pages "Type" "post") ".Params.category" "==" "D" }}
+		<h1 onclick="toggle('kontakt')" class=" f-headline-ns f-headline-m f-headline-l f-headline b malort-font">kontakt</h1>
+		<div class="flex-ns mhn1-ns flex-wrap" id="kontakt" style="display: none;" >
+			{{ range where (where .Data.Pages "Type" "post") ".Params.category" "==" "kontakt" }}
 					{{ .Render "single" }}
 			{{ end }}
 		</div>
