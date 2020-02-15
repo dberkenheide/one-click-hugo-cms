@@ -48,7 +48,7 @@
     "url-loader": "^1.0.0",
     "webpack": "^3.0.0",
     "whatwg-fetch": "^2.0.0",
-    "yarn": "^1.19.1"
+    "yarn": "^1.22.0"
   },
   "devDependencies": {
     "gulp-inject": "^5.0.0",
